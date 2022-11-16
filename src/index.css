@@ -53,7 +53,6 @@ body {
   margin-right: 10px;
 }
 .container__list {
-  background-color: red;
   width: 100%;
 }
 
@@ -66,8 +65,30 @@ body {
   background-color: #ffffff;
 }
 
+.container__list_item:nth-child(even) {
+  background-color: #f0f0f0;
+}
+
+.container__list_item:last-of-type {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
 .text {
   flex-grow: 2;
+}
+
+.container__list_item_btn {
+  appearance: none;
+  background-color: #000000;
+
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.container__list_item_btn:hover {
+  color: blueviolet;
 }
 
 .button-27 {
