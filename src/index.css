@@ -88,6 +88,8 @@ body {
   box-sizing: border-box;
   color: #ffffff;
   cursor: pointer;
+  font-weight: 600;
+  letter-spacing: 2px;
 }
 
 .container__list_item_btn:hover {
@@ -102,8 +104,10 @@ body {
   border-radius: 5px;
   color: #ffffff;
   cursor: pointer;
-  width: 100px;
+  width: 150px;
   text-align: center;
+  font-weight: 600;
+  letter-spacing: 2px;
 }
 
 .remove-btn:hover {

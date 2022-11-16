@@ -34,11 +34,13 @@ function App() {
   };
   const handleSubmit = (e) => {
     e.preventDefault();
-    setList((prev) => {
-      return [...prev, item];
-    });
-    setItem({ id: "", option: "" });
-    setEditMode(false);
+    if (item.option.trim()) {
+      setList((prev) => {
+        return [...prev, item];
+      });
+      setItem({ id: "", option: "" });
+      setEditMode(false);
+    }
   };
 
   const handleDelete = (id) => {
