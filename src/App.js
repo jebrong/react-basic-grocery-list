@@ -28,6 +28,10 @@ function App() {
       return { ...prev, id: id, option: e.target.value };
     });
   };
+
+  const removeAll = () => {
+    setList([]);
+  };
   const handleSubmit = (e) => {
     e.preventDefault();
     setList((prev) => {
@@ -96,6 +100,11 @@ function App() {
             </div>
           );
         })}
+        {list.length > 0 && (
+          <p className="remove-btn" onClick={removeAll}>
+            Remove All
+          </p>
+        )}
       </div>
     </div>
   );
